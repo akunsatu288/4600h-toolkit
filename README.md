@@ -100,8 +100,8 @@ bash ~/4600h_mode.sh
 
 | Mode | Governor | PPT | CO | Kegunaan |
 |---|---|---|---|---|
-| TURBO | performance | 45W | -20 | Gaming/rendering/compile |
-| BALANCED | ondemand | 45W | -20 | Daily driver |
+| TURBO | performance | 54W | -20 | Gaming/rendering/compile |
+| BALANCED | ondemand | 54W | -20 | Daily driver |
 | ECO | powersave | 25W | -10 | Dingin & senyap |
 | STOCK | ondemand | 25W | 0 | Reset ke default |
 
@@ -159,7 +159,7 @@ sudo apt-get install -y linux-modules-extra-$(uname -r)
 
 ## Catatan
 
-- Undervolt CO -20 sudah tested aman (0 failed / 60s stress)
+- Undervolt CO -25 sudah tested aman (0 failed / 60s stress)
 - Jangan push CO lebih dari -25 (bisa instabil)
 - Fan controlled by firmware, tidak bisa dikontrol dari Linux
 - Kernel 6.8.0-147-generic direkomendasikan (HWE, support sampai 2029)
