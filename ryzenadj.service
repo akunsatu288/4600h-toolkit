@@ -1,10 +1,10 @@
 [Unit]
-Description=RyzenAdj PPT Unlock + Undervolt for Ryzen 5 4600H
+Description=RyzenAdj for Ryzen 5 4600H (BIOS TDP 54W, CO -15)
 After=multi-user.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/ryzenadj --stapm-limit=45000 --fast-limit=45000 --slow-limit=45000 --apu-slow-limit=45000 --tctl-temp=95 --vrm-current=58000 --vrmsoc-current=15000 --vrmmax-current=96000 --vrmsocmax-current=20000 --set-coall=-25
+ExecStart=/usr/local/bin/ryzenadj --stapm-limit=54000 --fast-limit=54000 --slow-limit=54000 --apu-slow-limit=54000 --tdc-vdd=58000 --edc-vdd=96000 --thm-limit=95000 --set-coall=-15
 RemainAfterExit=yes
 
 [Install]

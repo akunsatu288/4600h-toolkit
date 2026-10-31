@@ -5,7 +5,7 @@
 echo "[4600H] Applying performance settings..."
 
 # 1. Governor (needs root)
-echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor > /dev/null
+echo ondemand | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor > /dev/null
 echo "[4600H] Governor: $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)"
 
 # 2. Load ryzen_smu if not loaded
@@ -25,6 +25,6 @@ sudo ryzenadj \
   --vrmsoc-current=15000 \
   --vrmmax-current=96000 \
   --vrmsocmax-current=20000 \
-  --set-coall=-25
+  --set-coall=-15
 
 echo "[4600H] Done. PPT=54W, CO=-20, Governor=performance"

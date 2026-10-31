@@ -159,7 +159,7 @@ sudo apt-get install -y linux-modules-extra-$(uname -r)
 
 ## Catatan
 
-- Undervolt CO -25 sudah tested aman (0 failed / 60s stress)
+- Undervolt CO -15 sudah tested aman (0 failed / 60s stress)
 - Jangan push CO lebih dari -25 (bisa instabil)
 - Fan controlled by firmware, tidak bisa dikontrol dari Linux
 - Kernel 6.8.0-147-generic direkomendasikan (HWE, support sampai 2029)
