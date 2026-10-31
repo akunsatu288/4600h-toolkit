@@ -1,0 +1,1 @@
+SUBSYSTEM=="ryzen_smu_drv", GROUP="users", MODE="0664"

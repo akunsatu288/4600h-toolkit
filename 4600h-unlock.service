@@ -1,0 +1,11 @@
+[Unit]
+Description=4600H Performance Unlock (Governor + PPT + Undervolt)
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/4600h_unlock.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
